@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIventure Pocket Privacy Policy">
+  <title>Privacy Policy — AIventure Pocket</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .legal-wrap { max-width: 760px; margin: 0 auto; padding: 80px 28px 96px; }
+    .legal-wrap h1 { font-size: 32px; margin-bottom: 8px; color: var(--text-primary); }
+    .legal-wrap h2 { font-size: 20px; margin-top: 36px; margin-bottom: 12px; color: var(--accent-gold); }
+    .legal-wrap p, .legal-wrap li { color: var(--text-muted); line-height: 1.8; }
+    .legal-wrap a { color: var(--accent-gold); }
+    .legal-wrap .meta { color: var(--text-faint); font-size: 0.88rem; margin-bottom: 32px; }
+    .back-link { color: var(--text-muted); font-size: 0.9rem; text-decoration: none; border-bottom: 1px solid transparent; }
+    .back-link:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+  </style>
+</head>
+<body>
+  <div class="legal-wrap">
+    <a href="index.html" class="back-link">← Back to AIventure Pocket</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">最終更新: 2026-05-27 / Effective: 2026-05-27</p>
+
+    <h2>1. はじめに / Introduction</h2>
+    <p>
+      AIventure Pocket（以下「本アプリ」）は、ユーザーのプライバシーを最優先に
+      設計されています。本アプリは独自のサーバーを持たず、ユーザーの個人情報を
+      収集することはありません。
+    </p>
+    <p>
+      AIventure Pocket ("the App") is designed with privacy as the highest
+      priority. We do not operate any servers, and we do not collect personal
+      data about you.
+    </p>
+
+    <h2>2. 端末内に保存されるデータ / Data Stored on Device</h2>
+    <ul>
+      <li>ゲームの進行状況 (SwiftData / Application Support 配下)</li>
+      <li>対話履歴（NPC との会話、直近200ターン上限）</li>
+      <li>ユーザー設定 (UserDefaults: 文字サイズ・効果音・オンボーディング完了)</li>
+      <li>ダウンロードされた AI モデルファイル (Application Support / Caches)</li>
+    </ul>
+    <p>これらはすべて端末内に閉じており、外部に送信されることはありません。</p>
+
+    <h2>3. 外部通信 / External Communication</h2>
+    <p>
+      本アプリは、<strong>初回起動時に AI モデル（Google Gemma 4 の MLX 量子化版）を
+      Hugging Face Hub からダウンロード</strong>する目的でのみ、外部と HTTPS 通信
+      します。
+    </p>
+    <p>
+      ダウンロードに伴い、Hugging Face のサーバーログには通常の Web アクセス情報
+      （IP アドレス、ユーザーエージェント、アクセスタイム）が記録されます。
+      本アプリ側はこのログを取得・保持しません。
+    </p>
+    <p>
+      Hugging Face のプライバシーポリシー:
+      <a href="https://huggingface.co/privacy" target="_blank" rel="noopener">https://huggingface.co/privacy</a>
+    </p>
+    <p>
+      On first launch, the App downloads the AI model (Google Gemma 4 in MLX
+      quantized form) from the Hugging Face Hub over HTTPS. As with any web
+      request, Hugging Face servers log the IP address, user agent, and access
+      timestamp. The App itself does not retain or process these logs.
+    </p>
+
+    <h2>4. AI 生成コンテンツ / AI-Generated Content</h2>
+    <p>
+      本アプリ内で AI (Gemma 4) との対話は完全にオンデバイスで行われ、
+      入力テキスト・出力テキストは一切外部に送信されません。
+    </p>
+    <p>
+      All conversations with the on-device AI (Gemma 4) happen locally on your
+      device. No prompts and no responses are transmitted externally.
+    </p>
+
+    <h2>5. トラッキング / Tracking</h2>
+    <p>
+      本アプリは App Tracking Transparency (ATT) の対象となるトラッキングを
+      行いません。
+    </p>
+
+    <h2>6. お子様の利用 / Children's Privacy</h2>
+    <p>
+      本アプリは 4+ レーティングで提供されます。お子様の個人情報を意図的に
+      収集することはありません。
+    </p>
+
+    <h2>7. 変更 / Changes</h2>
+    <p>
+      本ポリシーは将来更新される可能性があります。重要な変更がある場合は、
+      アプリ内およびこのページで告知します。
+    </p>
+
+    <h2>8. 連絡先 / Contact</h2>
+    <p>
+      本ポリシーに関するご質問は、GitHub Issues
+      (<a href="https://github.com/toshizo-app/aiventure-pocket-lp/issues" target="_blank" rel="noopener">aiventure-pocket-lp</a>)
+      または LP に記載のメールアドレスにてお問い合わせください。
+    </p>
+  </div>
+</body>
+</html>
